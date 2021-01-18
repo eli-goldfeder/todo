@@ -17,7 +17,7 @@ const ToDoList = () => {
         setTodos(newTodos);
     };
     
-    const completeToDo = (id) => {
+    const completeTodo = (id) => {
         const updatedTodos = todos.map((todo) => {
             if (todo.id === id) {
                 todo.isComplete = !todo.isComplete;
@@ -39,7 +39,7 @@ const ToDoList = () => {
 			<h1>What To Do Today?</h1>
 			<ToDoForm addTodo={addTodo} />
             </Jumbotron>
-            <ToDo todos={todos} completeToDo={completeToDo} removeTodo={removeTodo} />
+            <ToDo todos={todos} completeToDo={completeTodo} removeTodo={removeTodo} />
 		</div>
 	);
 };

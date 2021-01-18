@@ -13,7 +13,6 @@ const TodoForm = ({ addTodo }) => {
 
     const handleChange = (e) => {
         const newToDo = e.target.value;
-        console.log(newToDo);
         setInput(newToDo);
     }
     
